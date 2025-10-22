@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     roundImages.forEach((factor) => {
       const randomX = Math.random() * 60 - 30;
       const randomY = Math.random() * 60 - 30;
-      const randomRotate = Math.random() * 30 - 15; // 회전 폭을 조금 줄임
+      const randomRotate = Math.random() * 30 - 15; 
 
       factor.style.setProperty("--random-x", `${randomX}px`);
       factor.style.setProperty("--random-y", `${randomY}px`);
