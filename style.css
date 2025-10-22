@@ -10,7 +10,6 @@ body {
   height: 100vh;
   overflow: hidden;
   cursor: pointer;
-  /* 👇 3D 효과를 위한 원근감을 body에 추가해요! */
   perspective: 1000px;
 }
 
@@ -96,7 +95,7 @@ body {
   top: 65%;
   left: 20%;
   transform: rotateY(30deg) rotateZ(13deg);
-  width: 320px; /* 👇 여기에 각 카드별로 원하는 width 값을 추가해요! */
+  width: 320px;
   opacity: 0.8;
   z-index: 12;
 }
@@ -105,7 +104,7 @@ body {
 .rose-2 {
   top: 1%;
   left: 83%;
-  width: 310px; /* 이 장미만 조금 작게 만들 수도 있어요 */
+  width: 310px; 
   transform: rotateY(-10deg) rotateZ(10deg) rotateX(-5deg);
   opacity: 0.9;
   z-index: 11;
@@ -223,7 +222,7 @@ body {
   position: absolute;
   background-color: #ff0000;
   height: 2px;
-  z-index: 11; /* 카드(1), 원(0)보다 뒤, 배경(-2)보다는 앞에 배치 */
+  z-index: 11; 
   transition: all 900ms cubic-bezier(0.92, -0.6, 0.58, 1.53);
 }
 
@@ -401,12 +400,11 @@ body {
 .factor-1,
 .factor-2,
 .factor-3 {
-  /* 👇 수정 포인트: 모든 속성에 대해 전환 효과를 지정합니다. */
   transition: transform 2s ease-in-out,
-    /* 랜덤 움직임은 2초 동안 부드럽게 */ top 900ms
+top 900ms
       cubic-bezier(0.42, 0, 0.58, 1),
-    /* 클릭 애니메이션은 0.9초 */ left 900ms cubic-bezier(0.42, 0, 0.58, 1),
-    /* 클릭 애니메이션은 0.9초 */ filter 900ms cubic-bezier(0.42, 0, 0.58, 1); /* 클릭 애니메이션은 0.9초 */
+left 900ms cubic-bezier(0.42, 0, 0.58, 1),
+filter 900ms cubic-bezier(0.42, 0, 0.58, 1);
 }
 
 /* 그래픽 1 최상단 */
