@@ -124,7 +124,7 @@ body {
 .rose-2 {
   top: 1%;
   left: 83%;
-  width: 310px; /* 이 장미만 조금 작게 만들 수도 있어요 */
+  width: 310px;
   transform: rotateY(-10deg) rotateZ(10deg) rotateX(-5deg);
   opacity: 0.9;
   z-index: 11;

@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // --- 1. 애니메이션 대상 요소들 ---
   const mainImage = document.querySelector(".main-image");
   const redOverlay = document.querySelector(".red-overlay");
   const playingCards = document.querySelectorAll(".playing-card");
